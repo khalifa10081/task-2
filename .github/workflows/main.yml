@@ -8,16 +8,13 @@ on:
 
 
 jobs:
-  build:
+  builD:
     runs-on: ubuntu-latest
 
 
     steps:
-      - name:  'Printing folder contents'
-        run: ls
-
 
       - uses: actions/checkout@v3
 
-      - name:  'Printing folder contents'
-        run: ls
+      - name:  'Login to Ducker hub'
+        run: docker login --username khalifa10081 --pasword dckr_pat_c5pNSKvCExHq9oUNB4-YhtkF0Dk
