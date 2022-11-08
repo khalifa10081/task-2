@@ -2,8 +2,8 @@ FROM openjdk
  
 WORKDIR /application
 
-COPY khalifa.java .
+COPY Khalifa.java .
 
-RUN javac khalifa.java
+RUN javac Khalifa.java
 
-CMD java khalifa
+CMD java Khalifa
