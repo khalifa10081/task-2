@@ -19,8 +19,8 @@ jobs:
       - name:  "Login to Ducker hub"
         run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DTOKEN_TOKEN }}
 
-      - name: "docker Buliding Images"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/myimage .
+      - name: "Docker Buliding Images"
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/khalifa .
 
       - name: "Pushing to Ducker HUb" 
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/myimage
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/khalifa
